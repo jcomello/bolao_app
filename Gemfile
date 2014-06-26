@@ -29,7 +29,7 @@ gem 'bootstrap-sass'
 
 gem 'simple_form'
 
-# gem 'devise'
+gem 'devise'
 
 group :development, :test do
   gem "rspec-rails"
