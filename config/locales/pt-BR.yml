@@ -1,0 +1,87 @@
+pt-BR:
+  time:
+    formats:
+      default: "%d/%m/%Y"
+      short: "%b %d"
+      long: "%d %B, %Y"
+
+  application: Bolão
+  buttons:
+    save: Salvar
+    search: Buscar
+  navigation:
+    back: Voltar
+  header:
+    users: usuários
+    logout: Sair
+
+  users:
+    notice:
+      create_successful: Usuario salvo com sucesso
+      update_successful: Usuario atualizado com sucesso
+    index:
+      title: Listar usuarios
+      new_product: Novo usuario
+      no_products: Nenhum usuario salvo
+      edit: Editar
+      destroy: Excluir
+      name: Nome
+      provider: Fornecedor
+      total_count: Total de usuarios
+    new:
+      title: Novo usuario
+    edit:
+      title: Editar usuario
+      leave_it_blank: "Deixe em branco caso você não queira mudar a senha"
+      current_password_hint: Precisamos de sua senha atual para confirmar as mudanças
+      update: Atualizar
+      cancel_my_account: Cancele minha conta
+      unhappy: Infeliz com nossos serviços?
+
+  session:
+    sign_in: Entrar
+    sign_up: Novo cadastro
+    forgot_password: Esqueceu sua senha?
+    reset_password: Me envie instruções para reset de senha
+    new_password: Nova senha
+    confirm_new_password: Confirme a nova senha
+    change_password: Mude minha senha
+  unlock:
+    unlock_instrctions: "Não recebeu instruções de desbloqueio?"
+    resend_unlock_instrctions: "Reenviar instruções de desbloqueio"
+    title: Instruções de desbloqueio
+  registration:
+    title: Novo Cadastro
+  login:
+    title: Login
+
+  mongoid:
+    models:
+      user: Usuario
+    attributes:
+      user:
+        name: Nome
+        email: Email
+        city: Cidade
+        password: Senha
+        password_confirmation: Confirmar senha
+        remember_me: Lembrar de mim
+        current_password: Senha atual
+    errors:
+      models:
+        warehouse:
+          attributes:
+            number:
+              blank: Número em branco
+            street:
+              blank: Rua em branco
+        product:
+          attributes:
+            name:
+              blank: Nome em branco
+            provider:
+              blank: Fornecedor em branco
+        stock:
+          attributes:
+            quantity:
+              graeter_than: Você não pode salvar uma saída com quantidade maior que a quantidade total deste prduto no almoxarifado

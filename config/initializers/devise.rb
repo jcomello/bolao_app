@@ -4,7 +4,7 @@ Devise.setup do |config|
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
-  # config.secret_key = '71b1649b97340b7f63a60794e22bd2aec025959457bef5937812081e7086b4ed20aeb96171b6bae505d080c94b78fcfb7d26ad3e023c332040a4493b52684791'
+  # config.secret_key = '2eb7f23cdcef6ab7bf911fd5815e11e9888924523ae9e6abde24ae66db276e2b848f97d478a872e48305e4c64524b05e2074ee16a72a2e281324ff040dd0f9ce'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
@@ -97,7 +97,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
-  # config.pepper = '1cfd3ac2720f530d7f22a72838032193c50714ea30de92c86f35cb60c73f002fbfbad68064440e2e888463039a796ff0ad1803961dda37e2515e035a7a746a33'
+  # config.pepper = '652113b21daba9d8b20b487807238dda442355e01f182fbd1dbc07cd89616492214e10df1afbea8d6c25ffa71b2260825fc8ac0bcd181ae76588339a8e9f218f'
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without
@@ -156,21 +156,21 @@ Devise.setup do |config|
   # Defines which strategy will be used to lock an account.
   # :failed_attempts = Locks an account after a number of failed attempts to sign in.
   # :none            = No lock strategy. You should handle locking by yourself.
-  config.lock_strategy = :failed_attempts
+  # config.lock_strategy = :failed_attempts
 
   # Defines which key will be used when locking and unlocking an account
-  config.unlock_keys = [ :email ]
+  # config.unlock_keys = [ :email ]
 
   # Defines which strategy will be used to unlock an account.
   # :email = Sends an unlock link to the user email
   # :time  = Re-enables login after a certain amount of time (see :unlock_in below)
   # :both  = Enables both strategies
   # :none  = No unlock strategy. You should handle unlocking by yourself.
-  config.unlock_strategy = :email
+  # config.unlock_strategy = :both
 
   # Number of authentication tries before locking an account if lock_strategy
   # is failed attempts.
-  config.maximum_attempts = 3
+  # config.maximum_attempts = 20
 
   # Time interval to unlock the account if :time is enabled as unlock_strategy.
   # config.unlock_in = 1.hour
